@@ -1,0 +1,693 @@
+﻿:function AnnounceOn
+:Synopsis Indicate whether messages related to certain Audacity operations should be spoken
+:Returns int True if messages should be spoken
+:Param string/sKey No Description
+
+:function FocusInTrackPanel
+:Description Indicates if the focus is in the track panel.
+:Returns int True if focus is in the track panel
+
+:Function FocusInSelectionBar
+:Description Indicates if the focus is in the selection bar.
+:Returns int True if focus is in the selection bar
+
+:function SaySelectionPosition
+:Description Says the selection start or end position
+:Param int/iPosition The ID of the start or end selection position
+:Param string/sMessage Spoken message
+:Category Positioning
+
+:function MarkerMovement
+:Synopsis Used by scripts for keys that move the ends of the selection.
+:Description sScript is used only when not in the main window.  In the main window the current script key is executed.
+:Param string/sScript The script to be performed.
+:Param string/sAlert The alert message to be spoken
+
+:function MouseMovement
+:Description Used to bypass scripts such as MouseLeft, MouseRight etc. that are assigned to Audacity keys while in the main window.
+:Param string/sScript The script to perform.
+
+:function AnnounceKeyMessage
+:Description Speak a message for an Audacity hotkey if appropriate and send the key to Audacity.
+:Param string/Message The message to speak
+
+:function SayNotStopped
+
+:function SayNoProject
+:Description Speaks a message when no project is open. For example, pressing the [ key will speak this message, and the script will exit.
+:Category Say
+
+:function NoProject
+:Description This function indicates that no project is open (there are no tracks in track panel).
+:Returns int True if no project is open
+
+:function AutoStartEvent
+
+:function SayNonHighlightedText
+:Param handle/hwnd No Description
+:Param string/buffer No Description
+
+:function SayFocusedObject
+
+:function IsToolbar
+:Synopsis Return True if hWnd is one of the toolbars.
+:Description Return True if hWnd is one of the toolbars. The toolbars are in a window named ToolDock under the app window.  It is the second window, the selection bar is inside the window following it, which is also named ToolDock. Assumes focus is in the main window.
+:Returns int True if window hWnd is a toolbar, False otherwise
+:Param handle/hWnd handle of toolbar
+
+:function GetToolbar
+:Description When focus is on a toolbar control returns the handle of the toolbar containing the control
+:Returns handle toolbar containing the current control
+
+:Function FindToolbar
+:Synopsis Return the window handle of the named toolbar.
+:Returns handle Handle of the toolbar window or 0 if not found.
+:Param string/sToolbar Name of the toolbar window.
+
+:function FocusInMainWindow
+:Description Indicates if the focus is in the main window.
+:Returns int True if focus is in the main window
+
+:function GetPositionField
+:Description Get the value of one of the selection fields
+:Returns string Value of field
+:Param handle/hWnd Handle of position control
+
+:script SaySelectionStart
+:Synopsis Says the value of the Selection Start control
+:Description Says the value of the Selection Start control.  If pressed twice quickly, moves focus to it.  For Audacity 2.2.0 and later says the value (and name) of the left selection control.
+
+:script SaySelectionEnd
+:Synopsis Say the end position or length of the selection
+:Description Say the end position or length of the selection.  Also says whether End or Length is selected.  If pressed twice quickly, moves focus to it.  For Audacity 2.2.0 and later says the value (and name) of the right selection control.
+
+:script SayActiveCursor
+:Synopsis Says the Audio Position value
+:Description If the PC cursor is active, says the value of the Audio Position control.  If the PC cursor is not active or it is pressed twice quickly, says the cursor position.
+
+:script ScriptFileName
+
+:script AudacityScriptKeyHelp
+:Synopsis Displays Audacity JAWS hot key help in the virtual viewer.
+:Description Press twice quickly to display default JAWS hot key help.
+
+:function ShowJawsGuide
+:Description Runs the default web browser to display the Audacity Guide for JAWS web page.
+
+:script AudacityKeysHelp
+:Synopsis Displays Audacity shortcut keys in the virtual viewer.
+:Description Press twice quickly to display Windows shortcut keys
+
+:script MouseUp
+:Synopsis Increase track gain or move the mouse pointer/JAWS cursor up
+:Description In the Audacity main window you must activate the JAWS cursor to perform the default action.  The number of pixels for mouse movement is determined by the mouse movement variable.  The value of the mouse movement variable is set in default JCF.  It can be modified by using home row utility scripts.  This keystroke is useful for accurately positioning the mouse pointer.
+
+:script MouseDown
+:Synopsis Decrease track gain or move the mouse pointer/JAWS cursor down
+:Description In the Audacity main window you must activate the JAWS cursor to perform the default action.  The number of pixels for mouse movement is determined by the mouse movement variable.  The value of the mouse movement variable is set in default JCF.  It can be modified by using home row utility scripts.  This keystroke is useful for accurately positioning the mouse pointer.
+
+:script MouseLeft
+:Synopsis Pan left or move the mouse pointer/JAWS cursor to the left
+:Description In the Audacity main window you must activate the JAWS cursor to perform the default action.  The number of pixels for mouse movement is determined by the mouse movement variable.  The value of the mouse movement variable is set in default JCF.  It can be modified by using home row utility scripts.  This keystroke is useful for accurately positioning the mouse pointer.
+
+:script MouseRight
+:Synopsis Pan right or move the mouse pointer/JAWS cursor to the right
+:Description In the Audacity main window you must activate the Jaws cursor to perform the default action.  The number of pixels for mouse movement is determined by the mouse movement variable.  The value of the mouse movement variable is set in default JCF.  It can be modified by using home row utility scripts.  This keystroke is useful for accurately positioning the mouse pointer.
+
+:Function SayPositionField
+:Synopsis Say the specified position field.
+:Description Returns True if a position value was found, False if it could not be gotten, in which case it speaks a corresponding message (unless fSilent is True).
+Respects AnnounceMessage.
+:Returns int True if position field was found, False if toolbar not found.
+:Param int/iPosition For Audacity 2.1.3 and earlier, the ctrl ID of the position field.  For Audacity 2.2.0 and later ID_SELECTION_START and ID_SELECTION_END are used as "command values" and transformed into the appropriate control IDs based on the selection type.
+:Optional
+:Param int/fSilent If True does not speak error message if the selection toolbar could not be found.
+
+:script SelectionStart
+:Synopsis Says the selection start position
+:Description When the [ key is pressed, says the selection start position.
+:Category Positioning
+
+:script SelectionEnd
+:Synopsis Says the selection end position
+:Description When the ] key is pressed, says the selection end position.
+:Category Positioning
+
+:script FinishMarkerRight
+:Synopsis Moves the end of the selection to the right by a small amount
+
+:script FinishMarkerLeft
+:Synopsis Moves the end of the selection to the left by a small amount
+
+:script StartMarkerRight
+:Synopsis Moves the start of the selection to the right by a small amount
+
+:script StartMarkerLeft
+:Synopsis Moves the start of the selection to the left by a small amount
+
+:script JAWSHome
+
+:script JAWSEnd
+
+:script MoveToStartOfSelectedTracks
+:Synopsis Moves cursor to start of audio in selected tracks
+
+:script MoveToEndOfSelectedTracks
+:Synopsis Moves cursor to end of audio in selected tracks
+
+:script SelectToBeginning
+:Synopsis Moves the selection start to the start of the audio in the selected tracks
+
+:script SelectToEnd
+:Synopsis Moves the selection end to the end of the audio in the selected tracks
+
+:script SelectFromStartOfLine
+:Synopsis Select from current position to the start of file
+
+:script SelectToEndOfLine
+:Synopsis Select from current position to the end of file
+
+:script DeleteSelectedAudio
+:Synopsis Deletes the selected audio.
+
+:script JAWSDelete
+:Synopsis In track panel delete selected audio, otherwise does normal delete.
+:Description If focus is in the main window, a project exists, and audio is selected, the DEL key will delete it.  In this case we perform the script DeleteSelectedAudio.  Otherwise we perform the default script.
+
+:script JAWSBackspace
+:Synopsis Similar to JAWSDelete.
+
+:script SayPriorCharacter
+:Synopsis Sends LefttArrow to the application.
+:Description In the track panel speaks cursor position and/or motion preview per user options.
+
+:script SayNextCharacter
+:Synopsis Sends RightArrow to the application.
+:Description In the track panel speaks cursor position and/or motion preview per user options.
+
+:script Copy
+:Synopsis Copies selected audio to clipboard
+:Description Copy the selected audio to the clipboard if focus is in the main window.  Otherwise, perform the default script.
+
+:script CutToClipboard
+:Synopsis Cuts selected audio to clipboard
+
+:script DeselectAll
+:Synopsis Deselects all audio in current open project
+
+:script SelectInAllTracks
+:Synopsis Selects current time range in all tracks.
+
+:function RefreshFocus
+:Description Refresh the focused window.  Intended for refreshing the track panel after changes that JAWS does not pick up until after refreshing the screen.
+:Returns Void no return description
+
+:script CloseFocusTrack
+:Synopsis Close the currently focused track
+
+:script AnnounceOnOff
+:Synopsis Toggle the announcement of Audacity messages on or off
+
+:script NextDocumentWindow
+:Synopsis In the toolbars moves to the next toolbar.
+
+:script PreviousDocumentWindow
+:Synopsis In the toolbars moves to the previous toolbar.
+
+:function GetAudacityState
+:Synopsis returns the current program state-- play, record, pause
+:Returns int a bit mask of the ST_ state constants, or 0 if the Transport toolbar cannot be found
+
+:script SayAudacityState
+:Synopsis Says the current program state-- play, record, pause
+
+:script Enter
+:Synopsis In the main window when not stopped, pause/unpause (if "ENTER during play/record pauses" option activated).
+
+:script CtrlEnter
+:Synopsis In the main window when not stopped, send ENTER (if "ENTER during play/record pauses" option activated).
+
+:script OpenListBox
+:Synopsis If focus is in the track panel, pass the key through.
+
+:script CloseListBox
+:Synopsis If focus is in the track panel, pass the key through.
+
+:Function NavigateTrackPanel
+:Synopsis In the track panel moves to the specified track.
+:Description Sends keystrokes to move to the specified track.  Assumes focus is in the track panel.  If sDest contains characters other than blanks, digits, +, or - silently returns without taking any action.
+:Returns void no return description
+:Param string/sDest a number optionally preceded by + or -.  If preceded by + move down (to higher track number) that many tracks, if by - move up that many.  Otherwise moves to the specified absolute track number.  If it would move beyond the first or last track its value is adjusted acordingly.
+:Param string/sUpKey string containing name of key to move up (to lower numbered tracks).
+:Param string/sDownKeystring containing name of key to move down (to higher numbered tracks).
+
+:script GoToTrack
+:Synopsis Go to a track by number.
+:Description Prompts for a number and moves the focus to that track.  If the specified number contains characters other than blanks, digits, +, or - silently returns without taking any action.  If the number is preceded by + move down (to higher track number) that many tracks, if by - move up that many.  Otherwise moves to the specified absolute track number.  If focus is not in the track panel sends the keystroke to the application.
+
+:script MarkTrack
+:Synopsis Remember the focused track.
+
+:script GoToMarkedTrack
+:Synopsis Go to the marked track.
+
+:script ExchangeWithMark
+:Synopsis Go to the marked track and set the mark on the track that had focus.
+
+:script MoveCurrentTrackTo
+:Synopsis Moves the current track to the specified track number.
+:Description Prompts for a number and moves the current track to that position in the track list.  If the specified number contains characters other than blanks, digits, +, or - silently returns without taking any action.  If the number is preceded by + move down (to higher track number) that many tracks, if by - move up that many.  Otherwise moves to the specified absolute track number.  Assumes that Control+Shift+UpArrow is assigned to Move focused track up and Control+Shift+DownArrow to Move focused track down.  If focus is not in the track panel sends the keystroke to the application.
+
+:script MoveCurrentTrackToMark
+:Synopsis Move the current track to the position of the marked track.
+:Description Move the current track to the position of the marked track.  Assumes that Control+Shift+UpArrow is assigned to Move focused track up and Control+Shift+DownArrow to Move focused track down.  If focus is not in the track panel sends the keystroke to the application.
+
+:script MoveTrackUp
+:Synopsis Moves the current track up one track.
+:Description Moves the focused track up and speaks the name of the track moved over.  Assumes that this key is assigned to Audacity command Move focused track up.  If focus is not in the track panel sends the keystroke to the application.  Note that if this script is bound to the key assigned to CloseListBox, this script will not be executed.
+
+:script MoveTrackDown
+:Synopsis Moves the current track down one track.
+:Description Moves the focused track down and speaks the name of the track moved over.  Assumes that this key is assigned to Audacity command Move focused track down.  If focus is not in the track panel sends the keystroke to the application.  Note that if this script is bound to the key assigned to OpenListBox, this script will not be executed.
+
+:function GetObjState
+:Synopsis Returns the object state of the object in the window
+:Description Works for windows whose object name is the same as the window name
+:Returns int object state.  Use CTRL constants from hjconst.jsh to interpret, not state constants from msaaconst.jsh
+:Param handle/hWnd window to inspect
+
+:function IsStopped
+:Synopsis Determines if Audacity is currently stopped
+:Description Determines if Audacity is currently stopped.  Returns TRUE if stopped or the Transport toolbar cannot be found.  This is used to keep cursor position from being spoken unless Audacity is stopped.
+:Returns int TRUE if currently stopped or the Transport toolbar cannot be found.  Returns False otherwise.
+
+:script AdjustJawsVerbosity
+
+:script AdjustJAWSOptions
+
+:function NodeHlp
+:Returns string No Return Description
+:Param string/sNodeName No Description
+
+:function UOAnnounceMessages
+:Returns string No Return Description
+:Param int No Description
+
+:function UOAnnounceMessagesHlp
+:Returns string No Return Description
+
+:function UOAnnounceToolbars
+:Returns string No Return Description
+:Param int No Description
+
+:function UOAnnounceToolbarsHlp
+:Returns string No Return Description
+
+:function UOEnterPause
+:Returns string No Return Description
+:Param int No Description
+
+:function UOEnterPauseHlp
+:Returns string No Return Description
+
+:function AddDefaultConfig
+:Description Sets the JAWS options for Audacity to their default values and writes them to the .jsi file.
+
+:script ResetConfig
+:Synopsis Reset all audacity JAWS script config options to their default values.
+
+:script SayAppVersion
+:Synopsis Says the version of Audacity and the JAWS script.  If pressed twice quickly, displays this information in the virtual vviewer.
+
+:script SelectAll
+:Synopsis In the track panel selects all audio.
+:Description Performs the standard function, but announces that all audio is selected if in the track panel.
+
+:function ProcessVST
+:Description Activates Preset, Load Preset, and Save Preset controls in VST plugin dialogs.
+:Param int/iControlID control to activate
+
+:script VSTPreset
+:Synopsis Set focus to the preset control in VST dialogs.
+:Description Adds support for an access key to set focus to the preset control in VST dialogs.
+
+:script VSTLoadPreset
+:Synopsis Activates the Load button to load a preset in some VST plugin dialogs
+
+:script VSTSavePreset
+:Synopsis Activates the Save button to save a preset in some VST dialogs
+
+:script SayJump
+:Synopsis Speaks the position after executing a short/long jump key
+
+:function IsTrackSelected
+:Description Indicates whether the track is selected
+:Returns int True if current track is selected
+
+:function SayNoTrackSelected
+:Description Warn when the user performs a script that requires the current track to be selected.
+
+:function IsWarningDialog
+:Description Verify that focus is in the warning dialog that appears when importing uncompressed audio files.
+:Returns int True if focus is in the warning dialog
+
+:script SayLine
+:Synopsis Execute default SayLine operation.  In the track panel also says the position of the current track in the track panel and total number of tracks.
+
+:script SwitchChainsList
+:Synopsis Switch between the Chains and Chain lists in the Edit Chains dialog.
+:Description In Audacity v2.3.0 this became the Manage Macros dialog.
+
+:script PasteFromClipboard
+:Synopsis Paste from the clipboard
+
+:script ShowCopyright
+:Synopsis Display the copyright message in the virtual viewer.
+
+:function CheckAudacityVersion
+:Description Varify that current audacity version is equal to or higher than a given version.
+:Returns int True if the version of Audacity is >= the specified version.
+:Param string/sCheckver the version to compare against  in the form "major,minor,build,fix".  Trailing segments may be omitted, in which case they are not checked.  Ex: "2,0,3" to verify that the program version is 2.0.3 or higher.
+
+:script test
+
+:function loadNonJCFOptions
+:Description This function is used by the QuickSettings facility, support for Jaws 13 and later.
+
+:script AddAudacityJawsGuide
+:Synopsis Allow adding, or changing the Audacity Guide link
+:Category Script
+
+:Script Record
+:Synopsis Silence key that starts recording functions.
+:Description Silence key that starts recording functions.  This script types the key to which it is bound.  If it is not in a dialog or menu it does not speak the key label.
+
+:Function ClearSilence
+:Synopsis Clears the gfSilence flag used to silence speaking of focus changes.
+:Description This function can be scheduled with ScheduleFunction to terminate silencing of speech in the future.  It is used to reactivate speech after starting a recording.
+
+:function SayActiveLabel
+:Description Speak the text of the active label if any.  Assumes focus in track panel.  Uses the invisible cursor.
+:Returns Void no return description
+
+:script AddLabelAtSelection
+:Synopsis Add a label for the selected region.
+:Description Special audacity speech functionality is cancelled until ENTER is pressed, SayNext/PriorLine is pressed, or focus moves out of the window.
+
+:script AddLabelAtPlayPosition
+:Synopsis Add a label at the current play/record position.
+:Description Special audacity speech functionality is cancelled until ENTER is pressed, SayNext/PriorLine is pressed, or focus moves out of the window.
+
+:Function SayTimelineEnd
+:Synopsis Speaks the last number on the timeline after a zoom command.
+:Returns void no return description
+
+:Script ZoomNormal
+:Synopsis zoom normal
+
+:Script ZoomIn
+:Synopsis zoom in
+
+:Script ZoomOut
+:Synopsis zoom out
+
+:Script MuteAllTracks
+:Synopsis mute all tracks
+
+:Script UnmuteAllTracks
+:Synopsis unmute all tracks
+
+:Script ReplaceWithSilence
+:Synopsis replace with silence
+
+:Script ZeroCrossing
+:Synopsis find zero crossings
+
+:Script ImportAudio
+:Synopsis import audio
+
+:Script ExportAudio
+:Synopsis export audio
+
+:Script NewWindow
+:Synopsis open new project window
+
+:Script SaveProject
+:Synopsis save project
+
+:Script Preferences
+:Synopsis open preferences dialog
+
+:Script Duplicate
+:Synopsis duplicate selection in new track(s)
+
+:Script Trim
+:Synopsis trim: delete audio outside of selection
+
+:script ExportMultiple
+:Synopsis Export Multiple
+
+:script SplitCut
+:Synopsis Split Cut
+
+:script SplitDelete
+:Synopsis Split Delete
+
+:script PasteNewLabel
+:Synopsis Paste Text to New Label
+
+:script Split
+:Synopsis Split
+
+:script SplitNew
+:Synopsis Split New
+
+:script Join
+:Synopsis Join
+
+:script Disjoin
+:Synopsis Detach at Silences
+
+:script CutLabels
+:Synopsis Cut labels
+
+:script DeleteLabels
+:Synopsis Delete labels
+
+:script SplitCutLabels
+:Synopsis Split Cut labels
+
+:script SplitDeleteLabels
+:Synopsis Split Delete labels
+
+:script SilenceLabels
+:Synopsis Silence labels
+
+:script CopyLabels
+:Synopsis Copy labels
+
+:script SplitLabels
+:Synopsis Split labels
+
+:script JoinLabels
+:Synopsis Join labels
+
+:script DisjoinLabels
+:Synopsis Detach at Silences labels
+
+:script ToggleSpectralSelection
+:Synopsis Toggle spectral selection
+
+:script SelSyncLockTracks
+:Synopsis select In All Sync-Locked Tracks
+
+:script ZoomSel
+:Synopsis Zoom to Selection
+
+:script FitInWindow
+:Synopsis Fit in Window
+
+:script FitV
+:Synopsis Fit Vertically
+
+:script GoSelStart
+:Synopsis Go to Selection Start
+
+:script GoSelEnd
+:Synopsis Go to Selection End
+
+:script CollapseAllTracks
+:Synopsis Collapse All Tracks
+
+:script ExpandAllTracks
+:Synopsis Expand All Tracks
+
+:script PlayLooped
+:Synopsis Loop Play
+
+:script NewMonoTrack
+:Synopsis Mono Track
+
+:script MixAndRenderToNewTrack
+:Synopsis Mix and Render to New Track
+
+:script RepeatLastEffect
+:Synopsis Repeat last effect
+
+:script FirstTrack
+:Synopsis First Track
+
+:script LastTrack
+:Synopsis Last Track
+
+:script TrackPan
+:Synopsis Change pan
+
+:script TrackMoveTop
+:Synopsis Move focused track to top
+
+:script TrackMoveBottom
+:Synopsis Move focused track to bottom
+
+:script InputDevice
+:Synopsis Change recording device
+
+:script OutputDevice
+:Synopsis Change playback device
+
+:script AudioHost
+:Synopsis Change audio host
+
+:script InputChannels
+:Synopsis Change recording channels
+
+:script SayRecordingMeter
+:Synopsis Say the level displayed in the recording meter
+:Description Says the level displayed in the recording meter.  If pressed twice quickly, moves focus to it.
+
+:script SayPlaybackMeter
+:Synopsis Say the level displayed in the playback meter
+:Description Says the level displayed in the playback meter.  If pressed twice quickly, moves focus to it.
+
+:Function FormatPositionField
+:Synopsis Format a position string for speaking.
+:Returns string position value formatted for speaking
+:Param string/s value to be formatted
+
+:Function GetPositionFieldID
+:Synopsis Determines the control ID of a position field control.
+:Description Determines the proper control based on the version of Audacity and the setting of the Selection Type combo box (in 2.2.0 and later).
+:Returns int control ID of the position control.
+:Param int/iPosition For Audacity 2.1.3 and earlier, the ctrl ID of the position field.  For Audacity 2.2.0 and later ID_SELECTION_START and ID_SELECTION_END are used as "command values" and transformed into the appropriate control IDs based on the selection type.
+
+:Function GetPositionFieldHandle
+:Description Determines the proper control based on the version of Audacity and the setting of the Selection Type combo box (in 2.2.0 and later).
+:Returns handle Handle of the position control.
+:Param int/iPosition (see GetPositionFieldID)
+
+:Function SchedulePositionField
+:Synopsis Schedule a position field to be spoken after cursor motion completes and the field is updated.
+:Returns void no return description
+:Param int/iPosition (see GetPositionFieldID
+
+:function KeymapChangedEvent
+:Returns void no return description
+:Param int/iKeyCode
+:Param string/sKeyName
+:Param int/iKeyStatus
+
+:Script AudacityLayerHelp
+:Synopsis Speaks help for the Audacity key layer.
+
+:Script PositionLayerHelp
+:Synopsis Speaks help for the Position key layer.
+
+:Script SaySelectionType
+:Synopsis Say the value of the Selection Type combo.
+
+:Script SetSelectionType
+:Synopsis Set the value of the Selection Type combo to start-end (s or 1), start-length (l or 2), length-end (e or 3), or length-center (c or 4).
+
+:Script SendKey
+:Synopsis Allows you to define a key sequence that sends another key sequence to the system.
+:Description Send the key sequence in sKey.  This is used to allow a key to send a specified key sequence to the program.  No label is spoken.  To use it, in the JKM file make an entry like keys=SendKey("newsequence").
+:Param string/sKey Key sequence to send.
+:Category Script
+
+:Script SaySelectedText
+:Synopsis In the main window says the numbers of the selected tracks.  Otherwise says selected text.  If pressed twice quickly says track names instead.
+
+:Function GetTrackPanelObj
+:Description Get the accessible object of the track panel.
+:Returns object The accessible object of the track panel.
+
+:Script ShortLayerHelp
+:Synopsis Speaks help for the Short key layer.
+:Description The Short key layer provides access to the keys F5-F8 from the home row.
+
+:Script TempoStartStop
+:Synopsis Start or stop finding the tempo.
+:Description Playback is started.  While playing, script TempoTap counts a beat.  When pressed again tempo in beats per minute is spoken.  See script key help for more info.
+
+:Script TempoTap
+:Synopsis Records a beat for finding tempo.
+:Description Press this once for each beat.  The time is counted from the first beat after TempoStartStop until the last beat before TempoStartStop is pressed again.  You need to press only the last key of this key sequence once in the Tempo layer.
+
+:Script TempoAnnounce
+:Synopsis Says the value of the last calculated tempo.
+
+:Script TempoCopy
+:Synopsis Copies the last tempo value to the clipboard.
+
+:Script TempoLayerHelp
+:Synopsis Speaks Tempo layer key help.
+
+:Script DownCell
+:Synopsis In the track panel moves to the next selected track.  Otherwise moves down one cell and reads it.
+
+:Script UpCell
+:Synopsis In the track panel moves to the prior selected track.  Otherwise moves up one cell and reads it.
+
+:Function GetSelectedTracks
+:Description Returns a string containing the selected tracks numbers or names.  Consecutive selected tracks are shown as firsttrack-lasttrack.  Track ranges are separated by ", ".
+:Returns string selected tracks suitable for display.
+:Optional
+:Param int/fName If true track names are returned, otherwise track numbers are returned (default).
+
+:Function CleanTrackName
+:Description Removes status information added to track names for accessibility such as "Select On".
+:Returns string track name with status messages removed.
+:Param string/s track name
+
+:Script SayPriorWord
+:Synopsis In the track panel and selection bar previews after the start position.  Otherwise performs its normal function.
+
+:Script SayNextWord
+:Synopsis In the track panel and selection bar previews before the end position.  Otherwise performs its normal function.
+
+:Script SelectPriorWord
+:Synopsis In the track panel and selection bar previews before the start position.  Otherwise performs its normal function.
+
+:Script SelectNextWord
+:Synopsis In the track panel and selection bar previews after the end position.  Otherwise performs its normal function.
+
+:Script SelectPriorLine
+:Synopsis In the selection start/end fields plays a preview containing the audio moved over.  Elsewhere performs the default action.
+
+:Script SelectNextLine
+:Synopsis In the selection start/end fields plays a preview containing the audio moved over.  Elsewhere performs the default action.
+
+:Script ToggleMotionPreview
+:Synopsis Temporarily turns SayPosition off and PreviewMotion on.
+:Description When turned on temporarily turns SayPosition off and PreviewMotion on.  When turned off restores them to their Quick Settings.  This is turned off when focus returns to the program.
+
+:Function SayWindowTypeAndText
+:Description Respects gfSilence and gfSilenceClearOnNext.
+:Returns void no return description
+:Param handle/hWnd
+
+:Function FindFirstDigit
+:Synopsis Find the first digit in s.
+:Returns int string position of first digit, 0 if none
+:Param string/s string to check
+
