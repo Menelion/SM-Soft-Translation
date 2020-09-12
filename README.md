@@ -1,4 +1,4 @@
-# HELP TO TRANSLATE OUR FREE SOFTWARE INTO YOUR LOCAL LANGUAGE
+HELP TO TRANSLATE OUR FREE SOFTWARE INTO YOUR LOCAL LANGUAGE
 [Read original post on Sao mai center for the blind](https://www.saomaicenter.org/en/smsoft/localization) site
 We are a small non-profit organization for the blind based in Vietnam and have very limited budget for our activities. We rely on donations and grants to provide support services, maintain and develop new assistive tools. All of our services and products are given free of charge for the visually impaired people. For more information, please read the [About Us](https://www.saomaicenter.org/en/about) article on Sao Mai center for the blind homepage.  
 We would like to call for volunteers to help us translate our software applications into your local languages so it could help more visually impaired users around the world.  
