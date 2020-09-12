@@ -11,7 +11,7 @@ We are more than happy to answer any questions from you, please email us at: <te
 ## For Github user
 If you are Github user, we recommend you to fork this repository to your account, clone it to your computer, then do the following:
 
-- Make a new branche for your translation, then switch to that brance.
+- Make a new branch for your translation, then switch to that branch.
 - Read the quick instruction on the program in whitch you'd like to translate (link given above).
 - Open the corresponding folder. For example, translater of Sao Mai Braille should open folder called SMTranslatorForSMB. then start translating.
 - Commit to your repository, then create pull request to contribute with us.
