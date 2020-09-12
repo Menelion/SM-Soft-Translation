@@ -1,0 +1,72 @@
+;Use ISO 639-3 code table for naming extension
+[LANGUAGE]
+Name=English
+
+[CONTROLS]
+frmLessonBuilder=Lesson Builder
+btnHelpHint=Help [F1]
+btnBuildLessonHint=Build Lesson [F2]
+btnArrangeLessonHint=Arrange Lesson [F3]
+btnAboutHint=About [F11]
+btnExitHint=Exit [F12]
+tabLessons=Build Lessons
+edtAuthor=Author
+edtTitle=Lesson title
+lblDescription=Lesson description
+lblTextToType=Text to type
+lblExpectedSpeed=Expected speed
+lblCPM=CPM
+lblExpectedPoint=Expected point
+lblPercent=%
+lblLessonTime=Lesson time
+lblMinutes=minute
+btnFirst=&First lesson
+btnPrior=&Prior lesson
+btnNext=&Next lesson
+btnLast=&Last lesson
+btnNew=Ne&w lesson
+btnDelete=&Delete lesson
+btnNewFile=N&ew chapter
+btnOpenFile=&Open chapter
+btnSave=&Save chapter
+btnClose=&Close
+lblLesson=Lesson No:
+tabArrange=Arrange Lessons
+btnLoad=Load
+btnSave1=Save
+btnMoveUp=Move &Up
+btnMoveDown=Move &Down
+btnClose1=&Close
+OpenDialog=Open
+btnAction=&Open
+cboFileTypesItem0=Lessons (*.xml)
+lblFolders=Folders
+lblFiles=Files
+lblFileName=File &name
+lblFileTypes=File types
+btnCancel=&Cancel
+SaveDialog=Save as
+lblLessons=Lessons
+btnSetTitle=Set chapter title
+
+frmSetTitle=Set chapter title
+lblTitle=Chapter title
+btnOK=OK
+
+frmHelp=Sao Mai Help
+lblHelp=Sao Mai Help
+btnOpenInBrowser=Open in Browser
+
+frmAbout=About
+lblCopyright=Copyright by %s
+lblFileVersion=Version %s
+lblLicenseTo=Registered to:
+lblDistributionName=a
+lblTelFax2=a
+
+[MESSAGES]
+MSG_SaveChanges=Do you want to save changes ?
+MSG_Confirm=Confirm
+MSG_VoiceNotFound=Specified speech engine not found.
+MSG_Exit=Close application
+MSG_HelpNotFound=Cannot find the help file

@@ -1,0 +1,198 @@
+;Use ISO 639-3 code table for naming extension
+[LANGUAGE]
+Name=English
+DateFormat=mm/dd/yyyy
+
+[CONTROLS]
+frmManager=User Manager
+lblStudents=Student list
+lblResults=Results
+grdStudentsItem0=Name
+grdStudentsItem1=Score
+grdResultsItem0=Date
+grdResultsItem1=Lesson name
+grdResultsItem2=Duration
+grdResultsItem3=Speed
+grdResultsItem4=Score
+grdResultsItem5=Correct rate
+
+lblTeacher=Teacher
+lblStudentsOf=Students of
+lblAvailableStudents=Available Students
+grdStudentsOfItem0=Name
+grdStudentsOfItem1=Class
+grdAvailableStudentsItem0=Name
+grdAvailableStudentsItem1=Class
+btnAssign=Assign
+btnUnassign=Unassign
+
+lblStudentList=Student list
+lblSearchStudent=Search Student ID
+lblTeacherList=Teacher list
+lblSearchTeacher=Search Teacher ID
+grdStudentListItem0=User ID
+grdStudentListItem1=Name
+grdStudentListItem2=Class
+grdTeacherListItem0=Teacher ID
+grdTeacherListItem1=Name
+grdTeacherListItem2=Group ID
+btnAddStudent=Add Student
+btnDeleteStudent=Delete Student
+btnPostStudent=Post Student
+btnAddTeacher=Add Teacher
+btnDeleteTeacher=Delete Teacher
+btnPostTeacher=Post Teacher
+
+btnViewResultsHint=View Results [F2]
+btnAssignUserHint=Assign Users [F3]
+btnAddUserHint=Add User [F4]
+btnConfigHint=Options [F5]
+btnLoginHint=Login/Logout [F6]
+btnShowBuilderHint=Lesson Builder [F7]
+btnHelpHint=Help [F1]
+btnAboutHint=About [F11]
+btnExitHint=Exit [F12]
+
+frmConfig=Options
+lblUILanguage=UI Language
+lblDBSection=Database
+lblLessonSection=Lesson
+lblVoiceSection=Voice
+lblDBName=Database name
+lblLessonFolder=Lesson folder
+lblVoiceName=Voice name
+lblTypingMode=Typing method
+lblSpeakMode=Speak mode
+lblVoiceSpeed=Voice speed
+cboSpeakModeItem0=Silent
+cboSpeakModeItem1=By characters
+cboSpeakModeItem2=By words
+chkCheckError=Check error as typing
+btnBrowse=Browse...
+btnChange=Change...
+btnPreview=Preview voice
+btnCheckForUpdate=Check for update...
+btnRegister=Register...
+btnConnections=Connections
+btnChangePwd=Change password...
+btnOK=OK
+btnCancel=Cancel
+btnMore=More...
+btnMoreLessons=More lessons
+
+frmLogin=Login
+lblUserName=User name
+lblPassword=Password
+btnLogin=Login
+
+frmAbout=About
+lblCopyright=Copyright by %s
+lblFileVersion=Version %s
+lblLicenseTo=Registered to:
+lblDistributionName=a
+lblTelFax2=a
+btnClose=Close
+
+frmHelp=Sao Mai Help
+lblHelp=Sao Mai Help
+btnOpenInBrowser=Open in Browser
+
+frmChangePassword=Change password
+lblNewPassword=New password
+lblRetype=Verify
+
+frmActiveLicense=Active License
+lblName=Name
+lblEmail=Email
+lblLicenseKey=License key
+btnRegister=Register
+btnUnregister=Unregister
+
+frmConnections=Connection Manager
+lblRegisters=Registered computers
+lblConnections=Max connections
+lblAvailable=Available connections
+grdRegistersItem0=Computer Code
+grdRegistersItem1=Computer Name
+btnRemove=Remove
+
+frmDlgUpdate=Sao Mai Braille Update
+btnWhatNew=What's new
+
+OpenDialog=Select a database file
+btnAction=Open
+lblFolders=Folders
+lblFiles=Files
+lblFileName=File name
+lblFileTypes=File types
+
+FolderDialog=Select a folder
+btnOpen=Open
+
+frmMsgDlgConfirm=Confirm
+btnDlgYes=Yes
+btnDlgNo=No
+
+frmMsgDlgError=Error
+btnDlgOK=OK
+
+frmMsgDlgWarning=Warning
+
+frmMsgDlgInfo=Information
+
+frmDlgGetMorePackages=Get more packages
+
+[MESSAGES]
+MSG_Exit=Close application
+MSG_DeleteRecord=Are you sure you want to delete %s ?
+MSG_NoSpeech=No speech
+MSG_OpenDialog=Open %s dialog
+MSG_OpenTitle=Select a database file
+MSG_OpenFilter=Database files (*.smdb)|*.smdb|All files (*.*)|*.*
+MSG_SelectFolder=Select a folder
+MSG_SelectFile=Select a data file
+MSG_VoiceNotFound=Specified Speech Engine not found
+MSG_FileNotFound=File %s not found.\nPress OK to select your database file.
+MSG_HelpNotFound=Cannot find the help file
+MSG_PreviewVoice=You have selected %s as the application voice.
+MSG_NewPasswordError=Passwords are not the same
+MSG_ChangePasswordError=Your old password is incorrect
+MSG_ChangePasswordSuccess=Your password was changed successfully
+MSG_UserIncorrect=Username or password is incorrect
+MSG_CannotFindApp=Cannot find the application.
+MSG_WillExpire=Your trial will expire in %d days
+MSG_RegisteredTo=Registered to %s
+MSG_ConfirmLogout=Are you sure you want to logout ?
+MSG_UserLogout=You have logged out successfully
+MSG_Expired=Your trial has expired
+MSG_ContactDealer=Your trial has expired.\nPlease contact Sao Mai Center for the Blind to have the full version.\nEmail: sales@saomaicenter.org - Phone: +84-908-882553
+MSG_InvalidKey=This key is invalid (-1)
+MSG_IncorrectKey=This key is incorrect
+MSG_StudentOf=Students of %s
+
+MSG_Downloading=Downloading %s... %d%%
+MSG_Downloaded=The latest version has been downloaded.\nClick Run Update button to close your application and install the update now.
+MSG_DownloadError=Cannot download your selected packages.
+MSG_CheckForUpdate=Checking for update...
+MSG_Uptodate=Your application is up to date.
+MSG_FileExists=File %s already exists. Do you want to overwrite it ?
+MSG_UpdateAvailable=The latest version is ready to download.\nDo you want to update your application now ?
+MSG_UpdateNotFound=The update not found !
+MSG_InfoNotFound=Update information not found !
+MSG_OKtoUpdate=Click OK button to check for update.
+MSG_Done=Done 100%
+MSG_FileInfo=Latest version: %s, File size: %s, Release date: %s
+MSG_UpgradeAvailable=The newer version is available. Please contact your dealer to upgrade now.
+MSG_GetUpdate=Get Update
+MSG_RunUpdate=Run Update
+
+MSG_CannotConnectToServer=Cannot connect to Sao Mai server.
+MSG_InvalidInfo=License key or email not found
+MSG_ExceedNumber=Exceed number of licenses
+MSG_RegisterSuccessful=Register successful
+MSG_UnregisterSuccessful=Unregister successful
+
+MSG_PackageDownloaded=The selected packages has been downloaded.
+MSG_GetPackageInfo=Getting package information...
+MSG_SelectPackage=Select one or more packages.\nClick Install button to add your selected packages.
+MSG_InstallPackage=Install

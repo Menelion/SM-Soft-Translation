@@ -1,0 +1,253 @@
+;Use ISO 639-3 code table for naming extension
+[LANGUAGE]
+Name=English
+DateFormat=mm/dd/yyyy
+
+[CONTROLS]
+frmTyping=Sao Mai Typing Tutor
+lblExplorerMode=Press any key on your keyboard to start exploring.\nPress F2 twice to exit
+lblChooseLesson=Choose a lesson
+lblDescription=Description
+lblTextToType=Text to type
+lblExpectedTime=Expected speed
+lblExpectedPoint=Expected point
+lblLessonTime=Lesson time (minute)
+edtAuthor=Author
+edtTitle=Lesson title
+btnStartLesson=Start lesson
+btnExplorerHint=Keyboard explore [F2]
+btnConfigHint=Options [F5]
+btnLoginHint=Login [F6]
+btnHelpHint=Help [F1]
+btnAboutHint=About [F11]
+btnExitHint=Exit [F12]
+
+frmDlgTyping=Typing Learning
+grpResult=Result
+lblLesson=Lesson:
+lblDuration=Duration:
+lblSpeed=Speed:
+lblCorrectRate=Correct %:
+lblCorrectChars=Corrects:
+lblErrorChars=Errors:
+grpFingers=Finger Errors
+lblFingerName=Finger
+lblLeftFingers=Left hand
+lblLeft1=Errors
+lblLeft2=Corrects
+lblLeft3=Error %
+lblRightFingers=Right hand
+lblRight1=Errors
+lblRight2=Corrects
+lblRight3=Error %
+lblIndex=Index
+lblMiddle=Middle
+lblRing=Ring
+lblLittle=Little
+lblThumb=Thumb
+btnClose=Close
+grdResultsItem0=Date
+grdResultsItem1=Lesson name
+grdResultsItem2=Duration
+grdResultsItem3=Speed (CPM)
+grdResultsItem4=Score
+grdResultsItem5=Correct %
+grdResultsItem6=Corrects
+grdResultsItem7=Errors
+
+frmConfig=Options
+lblUILanguage=UI Language
+lblDBSection=Database
+lblLessonSection=Lesson
+lblVoiceSection=Voice
+lblDBName=Database name
+lblLessonFolder=Lesson folder
+lblVoiceName=Voice name
+lblTypingMode=Typing method
+lblSpeakMode=Speak mode
+lblVoiceSpeed=Voice speed
+cboSpeakModeItem0=Silent
+cboSpeakModeItem1=By characters
+cboSpeakModeItem2=By words
+chkCheckError=Check error as typing
+btnBrowse=Browse...
+btnChange=Change...
+btnPreview=Preview voice
+btnCheckForUpdate=Check for update...
+btnRegister=Register...
+btnConnections=Connections
+btnChangePwd=Change password...
+btnOK=OK
+btnCancel=Cancel
+btnMore=More...
+btnMoreLessons=More lessons
+
+frmAbout=About
+lblCopyright=Copyright by %s
+lblFileVersion=Version %s
+lblLicenseTo=Registered to:
+lblDistributionName=a
+lblTelFax2=a
+
+OpenDialog=Select a database file
+btnAction=Open
+lblFolders=Folders
+lblFiles=Files
+lblFileName=File name
+lblFileTypes=File types
+
+FolderDialog=Select a folder
+btnOpen=Open
+
+frmMsgDlgConfirm=Confirm
+btnDlgYes=Yes
+btnDlgNo=No
+
+frmMsgDlgError=Error
+btnDlgOK=OK
+
+frmMsgDlgWarning=Warning
+
+frmHelp=Sao Mai Typing Tutor Help
+lblHelp=Sao Mai Typing Tutor Help
+btnOpenInBrowser=Open in Browser
+
+frmChangePassword=Change password
+lblUserName=User name
+lblPassword=Password
+lblNewPassword=New password
+lblRetype=Verify
+
+frmActiveLicense=Active License
+lblName=Name
+lblEmail=Email
+lblLicenseKey=License key
+btnRegister=Register
+btnUnregister=Unregister
+
+frmLogin=Login
+btnLogin=Login
+
+frmMsgDlgInfo=Information
+
+frmDlgUpdate=Sao Mai Braille Update
+btnWhatNew=What's new
+
+frmDlgGetMorePackages=Get more packages
+
+[MESSAGES]
+MSG_stChecked=checked
+MSG_stUnchecked=unchecked
+MSG_stGrayed=grayed
+MSG_stDisabled=disabled
+MSG_stDelete=delete
+MSG_stInsert=insert
+MSG_stBack=back space
+MSG_stOpened=opened
+MSG_stClosed=closed
+MSG_stColumn=
+MSG_stRow=row
+MSG_stSubmenu=sub menu
+MSG_stTabsheet=tab
+MSG_stROfield=
+MSG_stPwdfield=password field
+MSG_stCapslock=caps lock
+MSG_stNumlock=num lock
+MSG_stScrolllock=scroll lock
+MSG_stPopupkey=popup key
+MSG_stWinkey=windows key
+MSG_stTurnon=on
+MSG_stTurnoff=off
+MSG_stNewLine=new line
+MSG_stTab=tab
+MSG_stSpace=space
+MSG_stComma=comma
+MSG_stDot=dot
+MSG_stColon=colon
+MSG_stSemicolon=semi colon
+MSG_stExcMrk=exclamation mark
+MSG_stAsterisk=asterisk
+MSG_stLParenthesis=left parenthesis
+MSG_stRParenthesis=right parenthesis
+MSG_stMinus=minus
+MSG_stApostrophe=apostrophe
+MSG_stQuotMrk=quotation mark
+MSG_stQuesMrk=question mark
+MSG_stSlash=slash
+MSG_stCent=cent
+MSG_stPound=pound
+MSG_stYen=yen
+MSG_stSection=section
+MSG_stCopyright=copyright
+MSG_stRegistered=registered
+MSG_stMultiplication=multiplication
+MSG_stDivision=division
+
+MSG_PressToStart=Press F1 for instruction, Spacebar to start, Alt to pause, Esc to exit
+MSG_PressToContinue=Press Spacebar to continue, Esc to exit
+MSG_ElapsedTime="Elapsed time:" nn:ss
+MSG_Corrects=Corrects: %d
+MSG_ScoreResult=Score: %.2f
+MSG_ElapsedTimeResult=n "min" ss "sec"
+MSG_CpmResult=%d cpm (expected %d)
+MSG_CorrectResult=%d characters
+MSG_ErrorResult=%d characters
+MSG_CorrectRateResult=%.2f%% (expected %d%%)
+MSG_Errors=Errors: %d
+MSG_Enter=enter
+MSG_ExitExplorerMode=Exit explorer mode
+MSG_OpenTitle=Select a database file
+MSG_OpenFilter=Database files (*.smdb)|*.smdb|All files (*.*)|*.*
+MSG_SelectFolder=Select a folder
+MSG_SelectFile=Select a data file
+MSG_StopLearning=Are you sure you want to stop this lesson ?
+MSG_VoiceNotFound=Specified speech engine not found.
+MSG_FileNotFound=File %s not found.\nPress OK to select your database file.
+MSG_PreviewVoice=You have selected %s as the application voice.
+MSG_Exit=Close application
+MSG_Timeup=Time up
+MSG_Capital=cap %s
+MSG_EmptyField=Text to type field is empty
+MSG_NoSpeech=No speech
+MSG_OpenDialog=Open %s dialog
+MSG_CannotFindApp=Cannot find the application.
+MSG_Expired=Your trial has expired
+MSG_WillExpire=Your trial will expire in %d days
+MSG_ContactDealer=Your trial has expired.\nPlease contact Sao Mai Center for the Blind to have the full version.\nEmail: sales@saomaicenter.org - Phone: +84-908-882553
+MSG_InvalidKey=This key is invalid (-1)
+MSG_IncorrectKey=This key is incorrect
+MSG_RegisteredTo=Registered to %s
+MSG_HelpNotFound=Cannot find the help file
+MSG_NewPasswordError=Passwords are not the same
+MSG_ChangePasswordError=Your old password is incorrect
+MSG_ChangePasswordSuccess=Your password was changed successfully
+MSG_UserIncorrect=User name or password is incorrect
+MSG_NotLogin=You have to login to use the application.\nPlease press F6 to login.
+MSG_LimitConnection=Connection limit: %d. Your connections has exceeded a limit
+
+MSG_Downloading=Downloading %s... %d%%
+MSG_Downloaded=The latest version has been downloaded.\nClick Run Update button to close your application and install the update now.
+MSG_DownloadError=Cannot download your selected packages.
+MSG_CheckForUpdate=Checking for update...
+MSG_Uptodate=Your application is up to date.
+MSG_FileExists=File %s already exists. Do you want to overwrite it ?
+MSG_UpdateAvailable=The latest version is ready to download.\nDo you want to update your application now ?
+MSG_UpdateNotFound=The update not found !
+MSG_InfoNotFound=Update information not found !
+MSG_OKtoUpdate=Click OK button to check for update.
+MSG_Done=Done 100%
+MSG_FileInfo=Latest version: %s, File size: %s, Release date: %s
+MSG_UpgradeAvailable=The newer version is available. Please contact your dealer to upgrade now.
+MSG_GetUpdate=Get Update
+MSG_RunUpdate=Run Update
+
+MSG_CannotConnectToServer=Cannot connect to Sao Mai server
+MSG_InvalidInfo=License key or email not found
+MSG_ExceedNumber=Exceed number of licenses
+MSG_RegisterSuccessful=Register successful
+MSG_UnregisterSuccessful=Unregister successful
+
+MSG_PackageDownloaded=The selected packages has been downloaded.
+MSG_GetPackageInfo=Getting package information...
+MSG_SelectPackage=Select one or more packages.\nClick Install button to add your selected packages.
+MSG_InstallPackage=Install
