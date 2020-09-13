@@ -5,7 +5,7 @@ We would like to call for volunteers to help us translate our software applicati
 You can send us the [localization request form here ](https://www.saomaicenter.org/en/node/4715) if you are already have certain experience of software localizing. Otherwise, you should open related links below for more information on how to translate our programs into your language. Then, please fill out and send us the localization request form at the end of this page content, or [contribute to this repository](#for-github-user) if you are Github user.  
 We are more than happy to answer any questions from you, please email us at: <tech@saomaicenter.org>
 ## QUICK Sao Mai SOFTWARE LOCALIZATION GUIDE
-- [Translate Sao Mai's Android Apps](https://github.com/manhcuong0312/SM-Soft-Translation/blob/master/androidapp.md)
+- [Translate Sao Mai's Android Apps](https://github.com/manhcuong0312/SM-Soft-Translation/wiki/TRANSLATE-ANDROID-APPS-(SM-MUSIC-READER-AND-SM-BRAILLE-VIEWER))
 - [Translate Sao Mai Braille (Windows version)](https://www.saomaicenter.org/en/smsoft/localization/translate-sao-mai-braille-windows-version)
 - [Translate Sao Mai Typing Tutor (Windows version)](https://www.saomaicenter.org/en/smsoft/localization/translate-sao-mai-typing-tutor-windows-version)
 ## For Github user
