@@ -1,4 +1,4 @@
-Welcome to SM-Soft-Translation - a repository for translating Sao Mai center for the blind's software
+Welcome to SM-Soft-Translation - a repository for translating Sao Mai center for the blind's software!  
 We are a small non-profit organization for the blind based in Vietnam and have very limited budget for our activities. We rely on donations and grants to provide support services, maintain and develop new assistive tools. All of our services and products are given free of charge for the visually impaired people. For more information, please read the [About Us](https://www.saomaicenter.org/en/about) article on Sao Mai center for the blind homepage.  
 We would like to call for volunteers to help us translate our software applications into your local languages so it could help more visually impaired users around the world. [read the entire calling letter](https://github.com/manhcuong0312/SM-Soft-Translation/wiki/HELP-TO-TRANSLATE-OUR-FREE-SOFTWARE-INTO-YOUR-LOCAL-LANGUAGE).  
 This repository has been created, which hope the translation stuff could be more convenient to community, especially GitHub user. However, if you're non-GitHub user, you can still contribute your translation by other way.
@@ -11,7 +11,7 @@ If you are GitHub user, we suggest you to fork this repository to your account, 
 - Open the corresponding folder. For example, translator of Sao Mai Braille should open folder called SMTranslatorForSMB, then start translating.
 - Commit to your repository, then create pull request to contribute with us.
 
-Right now this repository doesn't have file to be localize for Sao Mai Android apps. Will be updated soon.
+Right now this repository doesn't have translation files for Sao Mai Android apps. Will be updated soon.
 
 ## For non-GitHub user:
 Non-GitHub user, please follow the instructions from our website about apps or program you want to translate into your local language, then send us your translated files:
