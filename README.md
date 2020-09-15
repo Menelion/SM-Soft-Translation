@@ -7,7 +7,10 @@ This repository has been created, which hope the translation stuff could be more
 If you are GitHub user, we suggest you to fork this repository to your account, clone it to your computer, then do the following:
 
 - Make a new branch for your translation, then switch to that branch.
-- Read the quick instruction on the program in which you want to translate.
+- Follow the quick instruction on the program in which you want to translate:
+    - [Translate Sao Mai's Android Apps](https://github.com/manhcuong0312/SM-Soft-Translation/wiki/TRANSLATE-ANDROID-APPS-(SM-MUSIC-READER-AND-SM-BRAILLE-VIEWER))
+    - [Translate Sao Mai Braille (Windows version)](https://github.com/manhcuong0312/SM-Soft-Translation/wiki/TRANSLATE-SAO-MAI-BRAILLE-(WINDOWS-VERSION))
+    - [Translate Sao Mai Typing Tutor (Windows version)](https://github.com/manhcuong0312/SM-Soft-Translation/wiki/TRANSLATE-SAO-MAI-TYPING-TUTOR-(WINDOWS-VERSION))
 - Open the corresponding folder. For example, translator of Sao Mai Braille should open folder called SMTranslatorForSMB, then start translating.
 - Commit to your repository, then create pull request to contribute with us.
 
