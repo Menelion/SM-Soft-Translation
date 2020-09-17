@@ -29,4 +29,4 @@ Any question, or feature suggestion for our programs, and apps, please contact u
 - E-mail: <tech@saomaicenter.org>
 - [Follow Sao Mai center for the blind on Facebook](https://www.facebook.com/saomaicenterfortheblind/)
 - [Follow Sao Mai center for the blind on Twitter](https://twitter.com/SaoMaiCenter)
-- [Subscribe to our YouTube channel](https://www.youtube.com/saomaicenterfortheblind)
+- [Subscribe to our YouTube channel](https://www.youtube.com/saomaicenterfortheblind?sub_confirmation=1)
