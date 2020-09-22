@@ -7,7 +7,7 @@ We would like to call for volunteers to help us translate our software applicati
 [read the entire calling letter here](https://github.com/Sao-Mai-Center/SM-Soft-Translation/wiki/HELP-TO-TRANSLATE-OUR-FREE-SOFTWARE-INTO-YOUR-LOCAL-LANGUAGE).  
 
 ## Translation needed software
-Please read the introduction about software we currently have if you don't know it before:
+Please read the introduction about software that we currently own if you don't know them before:
 
 - [Sao Mai Braille](http://saomaicenter.org/en/smsoft/smb)
 - [SM Braille Viewer](http://saomaicenter.org/en/smsoft/sm-braille-viewer)
