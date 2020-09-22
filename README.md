@@ -1,20 +1,34 @@
 Welcome to SM-Soft-Translation - a repository for translating Sao Mai center for the blind's software!  
-We are a small non-profit organization for the blind based in Vietnam and have very limited budget for our activities. We rely on donations and grants to provide support services, maintain and develop new assistive tools. All of our services and products are given free of charge for the visually impaired people. For more information, please read the [About Us](https://www.saomaicenter.org/en/about) article on Sao Mai center for the blind homepage.  
-We would like to call for volunteers to help us translate our software applications into your local languages so it could help more visually impaired users around the world. [read the entire calling letter](https://github.com/manhcuong0312/SM-Soft-Translation/wiki/HELP-TO-TRANSLATE-OUR-FREE-SOFTWARE-INTO-YOUR-LOCAL-LANGUAGE).  
-This repository has been created, which hope the translation stuff could be more convenient to community, especially GitHub user. However, if you're non-GitHub user, you can still contribute your translation by other way.
+We are a small non-profit organization for the blind based in Vietnam and have very limited budget for our activities.
+We rely on donations and grants to provide support services, maintain and develop new assistive tools.
+All of our services and products are given free of charge for the visually impaired people.
+For more information, please read the [About Us](https://www.saomaicenter.org/en/about) article on Sao Mai center for the blind homepage.  
+We would like to call for volunteers to help us translate our software applications into your local languages so it could help more visually impaired users around the world.
+[read the entire calling letter here](https://github.com/Sao-Mai-Center/SM-Soft-Translation/wiki/HELP-TO-TRANSLATE-OUR-FREE-SOFTWARE-INTO-YOUR-LOCAL-LANGUAGE).  
+
+## Translation needed software
+Please read the introduction about software we currently have if you don't know it before:
+
+- [Sao Mai Braille](http://saomaicenter.org/en/smsoft/smb)
+- [SM Braille Viewer](http://saomaicenter.org/en/smsoft/sm-braille-viewer)
+- [Sao Mai Typing Tutor](http://saomaicenter.org/en/smsoft/smtt)
+
+This repository has been created, which hope the translation stuff could be more convenient to community, especially GitHub user.
+However, if you're non-GitHub user, you can still contribute your translation by other way.
 
 ## For GitHub user
 If you are GitHub user, we suggest you to fork this repository to your account, clone it to your computer, then do the following:
 
 - Make a new branch for your translation, then switch to that branch.
 - Follow the quick instruction on the program in which you want to translate:
-    - [Translate Sao Mai's Android Apps](https://github.com/manhcuong0312/SM-Soft-Translation/wiki/TRANSLATE-ANDROID-APPS-(SM-MUSIC-READER-AND-SM-BRAILLE-VIEWER))
-    - [Translate Sao Mai Braille (Windows version)](https://github.com/manhcuong0312/SM-Soft-Translation/wiki/TRANSLATE-SAO-MAI-BRAILLE-(WINDOWS-VERSION))
-    - [Translate Sao Mai Typing Tutor (Windows version)](https://github.com/manhcuong0312/SM-Soft-Translation/wiki/TRANSLATE-SAO-MAI-TYPING-TUTOR-(WINDOWS-VERSION))
+    - [Translate Sao Mai's Android Apps](https://github.com/Sao-Mai-Center/SM-Soft-Translation/wiki/TRANSLATE-ANDROID-APPS-(SM-MUSIC-READER-AND-SM-BRAILLE-VIEWER))
+    - [Translate Sao Mai Braille (Windows version)](https://github.com/Sao-Mai-Center/SM-Soft-Translation/wiki/TRANSLATE-SAO-MAI-BRAILLE-(WINDOWS-VERSION))
+    - [Translate Sao Mai Typing Tutor (Windows version)](https://github.com/Sao-Mai-Center/SM-Soft-Translation/wiki/TRANSLATE-SAO-MAI-TYPING-TUTOR-(WINDOWS-VERSION))
 - Open the corresponding folder. For example, translator of Sao Mai Braille should open folder called SMTranslatorForSMB, then start translating.
 - Commit to your repository, then create pull request to contribute with us.
 
-Right now this repository doesn't have translation files for Sao Mai Android apps. Will be updated soon.
+Right now this repository doesn't have translation files for Sao Mai Android apps.
+Those will be updated soon.
 
 ## For non-GitHub user:
 Non-GitHub user, please follow the instructions from our website about apps or program you want to translate into your local language, then send us your translated files:
